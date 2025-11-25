@@ -1,0 +1,83 @@
+Use the following search/replace blocks to update Frontend/src/components/Admin Pannel/ManageNotifications.js stepwise:
+
+1.
+<<<<<<< SEARCH
+const response = await fetch('http://localhost:5000/api/notifications/send', {
+=======
+const response = await fetch('http://localhost:5000/api/notifications', {
+>>>>>>> REPLACE
+
+2.
+<<<<<<< SEARCH
+const response = await fetch('http://localhost:5000/api/notifications/bulk-send', {
+=======
+const response = await fetch('http://localhost:5000/api/notifications/bulk', {
+>>>>>>> REPLACE
+
+3.
+<<<<<<< SEARCH
+const response = await fetch('http://localhost:5000/api/notifications', {
+=======
+const response = await fetch('http://localhost:5000/api/notifications', {
+>>>>>>> REPLACE
+
+Modify to ensure fetchNotifications URL is 'http://localhost:5000/api/notifications'.
+
+4.
+<<<<<<< SEARCH
+              <option value="">All Courses</option>
+              <option value="B.A">B.A</option>
+              <option value="B.Sc">B.Sc</option>
+              <option value="B.Ed">B.Ed</option>
+=======
+              <option value="">All Departments</option>
+              <option value="B.A">B.A</option>
+              <option value="B.Sc">B.Sc</option>
+              <option value="B.Ed">B.Ed</option>
+>>>>>>> REPLACE
+
+5.
+<<<<<<< SEARCH
+              <input
+                type="text"
+                name="academicYear"
+                value={formData.academicYear}
+                onChange={handleInputChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+              />
+=======
+              <input
+                type="text"
+                name="academicYear"
+                value={formData.academicYear}
+                placeholder="e.g. 2023-2024"
+                onChange={handleInputChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+              />
+>>>>>>> REPLACE
+
+6.
+<<<<<<< SEARCH
+              <input
+                type="number"
+                name="semester"
+                value={formData.semester}
+                onChange={handleInputChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+                min="1"
+                max="10"
+              />
+=======
+              <input
+                type="number"
+                name="semester"
+                value={formData.semester}
+                placeholder="e.g. 1"
+                onChange={handleInputChange}
+                style={{ width: '100%', padding: '8px', marginTop: '5px' }}
+                min="1"
+                max="10"
+              />
+>>>>>>> REPLACE
+
+Make sure to perform these edits sequentially to avoid file conflicts.

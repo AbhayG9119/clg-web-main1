@@ -1,0 +1,2 @@
+- [ ] Fix session ID display in student detailed profile by populating sessionId in backend
+- [ ] Test the fix to ensure session ID shows properly
