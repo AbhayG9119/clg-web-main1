@@ -25,10 +25,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "set PORT=3000 && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cd Frontend && set PORT=3000 && react-scripts start",
+    "build": "cd Frontend && react-scripts build",
+    "test": "cd Frontend && react-scripts test",
+    "eject": "cd Frontend && react-scripts eject"
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
