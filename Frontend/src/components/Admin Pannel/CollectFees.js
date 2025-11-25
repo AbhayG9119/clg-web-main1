@@ -76,9 +76,10 @@ const CollectFees = () => {
     const course = selectedStudent.class.split(' ')[0];
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`http://localhost:5000/api/fees/${course}`, {
+      const baseUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
+      const response = await fetch(baseUrl + '/api/fees/' + course, {
         headers: {
-          'Authorization': `Bearer ${token}`
+          'Authorization': 'Bearer ' + token
         }
       });
       if (response.ok) {
