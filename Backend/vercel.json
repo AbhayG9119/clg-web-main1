@@ -13,8 +13,8 @@
     }
   ],
   "env": {
-    "MONGO_URI": "@mongo_uri",
-    "FRONTEND_URL": "@frontend_url",
+    "MONGO_URI": "MONGO_URI= mongodb+srv://snsmv25_db_user:NMW6e0LzyYiTvERo@college-cluster.kmiwakh.mongodb.net/collegeDB?retryWrites=true&w=majority&appName=college-cluster",
+    "FRONTEND_URL": "https://clg-web-main1-bb2e.vercel.app/",
     "PORT": "5000"
   }
 }
